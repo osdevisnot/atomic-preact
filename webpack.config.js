@@ -20,7 +20,10 @@ module.exports = {
     }
   },
   module: {
-    loaders: [{ test: /\.tsx?$/, loaders: ['awesome-typescript-loader'], exclude: /node_modules/ }]
+    loaders: [{ test: /\.(j|t)sx?$/, loaders: ['awesome-typescript-loader'], exclude: /node_modules/ }]
   },
-  plugins: [new $.HtmlPlugin({ title: pkg.description, template: './src/index.html' })]
+  plugins: [
+    new $.CleanPlugin(['dist'], { root: __dirname }),
+    new $.HtmlPlugin({ title: pkg.description, template: './src/index.html' })
+  ]
 };
