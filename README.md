@@ -4,12 +4,12 @@ Webpack2 boilerplate for building SPA with best in class features:
 
 - [x] **Typescript Support**
 - [x] **Styled-Components**
-- [ ] **Atomic Design**
+- [x] **Atomic Design**
 - [x] **React Storybook**
 - [x] **Jest Testing**
 - [ ] **Enzyme**
-- [ ] **Offline First PWA** (via service worker caching)
-- [ ] **Cache Busting**
+- [x] **Offline First PWA** (via service worker caching)
+- [x] **Cache Busting**
 - [x] **Hot Module Replacement** for all files
 - [ ] **Preact Developer Tools**
 - [ ] **Lighthouse Certified**
