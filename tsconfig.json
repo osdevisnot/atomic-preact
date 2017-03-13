@@ -5,7 +5,9 @@
     "noImplicitAny": false,
     "sourceMap": false,
     "jsx": "react",
-    "jsxFactory": "h"
+    "jsxFactory": "h",
+    "types": ["node", "webpack-env", "jest"],
+    "allowJs": true
   },
   "exclude": ["node_modules"]
 }

@@ -5,7 +5,7 @@ Webpack2 boilerplate for building SPA with best in class features:
 - [x] **Typescript Support**
 - [x] **Styled-Components**
 - [ ] **Atomic Design**
-- [ ] **React Storybook**
+- [x] **React Storybook**
 - [x] **Jest Testing**
 - [ ] **Enzyme**
 - [ ] **Offline First PWA** (via service worker caching)
