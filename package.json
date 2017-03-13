@@ -5,16 +5,34 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "webpack-dev-server --inline --hot --progress --port 9000",
-    "test": "",
-    "prod": "webpack --progress"
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --inline --hot --progress --port 9000",
+    "test": "cross-env NODE_ENV=test jest",
+    "prod": "cross-env NODE_ENV=production webpack --progress"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "tsx",
+      "ts",
+      "jsx",
+      "js"
+    ],
+    "moduleDirectories": [
+      "src",
+      "node_modules"
+    ],
+    "transform": {
+      "\\.(tsx|jsx|ts|js)$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    }
   },
   "devDependencies": {
     "@types/node": "^7.0.8",
     "@types/webpack-env": "^1.13.0",
     "awesome-typescript-loader": "^3.1.2",
+    "cross-env": "^3.2.3",
     "html-webpack-plugin": "^2.28.0",
+    "jest-cli": "^19.0.2",
     "load-webpack-plugins": "^0.0.2",
+    "ts-jest": "^19.0.0",
     "typescript": "^2.2.1",
     "webpack": "^2.2.1",
     "webpack-dev-server": "^2.4.1"
