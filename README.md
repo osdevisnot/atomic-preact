@@ -1,5 +1,7 @@
 # atomic-preact
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/osdevisnot/atomic-preact.svg)](https://greenkeeper.io/)
+
 Webpack2 boilerplate for building SPA with best in class features:
 
 - [x] **Typescript Support**
