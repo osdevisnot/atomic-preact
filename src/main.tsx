@@ -1,5 +1,10 @@
 import { h, render } from 'preact';
 
+if (process.env.NODE_ENV === 'production') {
+  const runtime = require('offline-plugin/runtime');
+  runtime.install();
+}
+
 let root;
 
 function main() {
