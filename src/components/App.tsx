@@ -1,15 +1,22 @@
-import { h, Component } from 'preact';
+import { h } from 'preact';
+import { injectGlobal, ThemeProvider } from 'styled-components';
 
-interface AppProps {
-  name: string
-}
+import theme from './themes/default';
+import Label from './atoms/Label';
 
-export default class App extends Component<AppProps, any> {
-  render(props: AppProps & preact.ComponentProps, state: any) {
-    return (
-      <div>
-        <h1>Hello {props.name} !!</h1>
-      </div>
-    );
+injectGlobal`
+  body {
+    margin: 20px;
   }
-}
+`;
+
+const App = ({ children }) => {
+  return (
+    <ThemeProvider theme={theme}>
+      {children}
+      <Label>This is a styled label</Label>
+    </ThemeProvider>
+  );
+};
+
+export default App;
