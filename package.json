@@ -16,6 +16,7 @@
       "jsx",
       "js"
     ],
+    "testMatch": ["**/?(*.)(spec|test).(j|t)s?(x)", "**/__tests__/**/*.(j|t)s?(x)"],
     "moduleDirectories": [
       "src",
       "node_modules"
@@ -25,19 +26,26 @@
     }
   },
   "devDependencies": {
+    "@types/jest": "^19.2.1",
     "@types/node": "^7.0.8",
     "@types/webpack-env": "^1.13.0",
     "awesome-typescript-loader": "^3.1.2",
     "cross-env": "^3.2.3",
     "html-webpack-plugin": "^2.28.0",
+    "jest": "^19.0.2",
     "jest-cli": "^19.0.2",
     "load-webpack-plugins": "^0.0.2",
+    "react": "^15.4.2",
     "ts-jest": "^19.0.0",
     "typescript": "^2.2.1",
     "webpack": "^2.2.1",
     "webpack-dev-server": "^2.4.1"
   },
   "dependencies": {
-    "preact": "^7.2.0"
+    "preact": "^7.2.0",
+    "preact-compat": "^3.14.1",
+    "styled-components": "^1.4.4",
+    "styled-theme": "^0.3.3",
+    "styled-tools": "^0.1.4"
   }
 }
